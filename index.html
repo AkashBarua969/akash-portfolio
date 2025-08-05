@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akash Barua | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="dynamic-background"></div>
+  <header>
+    <nav class="navbar container" role="navigation" aria-label="Primary Navigation">
+      <div class="logo" aria-label="Akash Barua logo">Akash Barua</div>
+      <button id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="nav-links" class="nav-links" role="menu">
+        <li role="none"><a href="#hero" class="nav-link" role="menuitem" tabindex="0">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem" tabindex="0">About</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem" tabindex="0">Skills</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem" tabindex="0">Projects</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem" tabindex="0">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle Dark/Light Theme" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section container" tabindex="-1" aria-label="Introduction">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Akash Barua</span></h1>
+        <h2>I am <span id="typed-text" aria-live="polite" aria-atomic="true"></span><span class="cursor" aria-hidden="true">|</span></h2>
+        <p>Passionate CSE student, problem solver, cybersecurity enthusiast, campus ambassador, and volunteer.</p>
+        <a href="#contact" class="btn btn-primary" role="button">Get In Touch</a>
+      </div>
+      <div class="hero-image" aria-label="Profile picture of Akash Barua">
+        <img src="akash.jpg" alt="Photo of Akash Barua" loading="lazy" />
+      </div>
+    </section>
+
+    <section id="about" class="section container animate" tabindex="-1" aria-label="About Me">
+      <h2>About Me</h2>
+      <p>Hello! I'm Akash Barua from Chattogram, Bangladesh. A dedicated Computer Science student at Sylhet International University, expected to graduate in 2026. I am deeply passionate about programming, problem-solving, and cybersecurity. I enjoy contributing as a campus ambassador and humanitarian volunteer, embodying leadership and empathy in everything I do.</p>
+      <ul>
+        <li><strong>Education:</strong> B.Sc. in CSE (Sylhet International University, 2026 expected)</li>
+        <li><strong>HSC:</strong> Raozan Govt. College (GPA 4.50, 2021)</li>
+        <li><strong>SSC:</strong> Raozan Aryamaitreya Institution (GPA 4.17, 2018)</li>
+        <li><strong>Languages & Tech:</strong> C, C++, Java, JavaScript, HTML, CSS, PHP, MySQL</li>
+        <li><strong>Training:</strong> Diploma in Office Course, Smart Office Management Training by EDGE Project & ICT Ministry</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section container animate" tabindex="-1" aria-label="My Skills">
+      <h2>Skills & Expertise</h2>
+      <div class="skills-grid" aria-live="polite">
+        <div class="skill-circle" data-percent="95" aria-label="C programming skill 95 percent">
+          <svg>
+            <circle class="bg" cx="75" cy="75" r="45"></circle>
+            <circle class="progress" cx="75" cy="75" r="45"></circle>
+          </svg>
+          <div class="skill-info">
+            <h3>C</h3>
+            <div class="percent" aria-hidden="true">0%</div>
+          </div>
+        </div>
+
+        <div class="skill-circle" data-percent="90" aria-label="C++ programming skill 90 percent">
+          <svg>
+            <circle class="bg" cx="75" cy="75" r="45"></circle>
+            <circle class="progress" cx="75" cy="75" r="45"></circle>
+          </svg>
+          <div class="skill-info">
+            <h3>C++</h3>
+            <div class="percent" aria-hidden="true">0%</div>
+          </div>
+        </div>
+
+        <div class="skill-circle" data-percent="85" aria-label="Java programming skill 85 percent">
+          <svg>
+            <circle class="bg" cx="75" cy="75" r="45"></circle>
+            <circle class="progress" cx="75" cy="75" r="45"></circle>
+          </svg>
+          <div class="skill-info">
+            <h3>Java</h3>
+            <div class="percent" aria-hidden="true">0%</div>
+          </div>
+        </div>
+
+        <div class="skill-circle" data-percent="80" aria-label="JavaScript programming skill 80 percent">
+          <svg>
+            <circle class="bg" cx="75" cy="75" r="45"></circle>
+            <circle class="progress" cx="75" cy="75" r="45"></circle>
+          </svg>
+          <div class="skill-info">
+            <h3>JavaScript</h3>
+            <div class="percent" aria-hidden="true">0%</div>
+          </div>
+        </div>
+
+        <div class="skill-circle" data-percent="85" aria-label="Web technologies HTML, CSS, PHP, MySQL skill 85 percent">
+          <svg>
+            <circle class="bg" cx="75" cy="75" r="45"></circle>
+            <circle class="progress" cx="75" cy="75" r="45"></circle>
+          </svg>
+          <div class="skill-info">
+            <h3>Web Dev</h3>
+            <div class="percent" aria-hidden="true">0%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container animate" tabindex="-1" aria-label="Projects">
+      <h2>Projects</h2>
+      <div class="projects-filter" role="tablist" aria-label="Filter Projects by category">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" tabindex="0">All</button>
+        <button class="filter-btn" data-filter="web" role="tab" aria-selected="false" tabindex="0">Web</button>
+        <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false" tabindex="0">Machine Learning</button>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card web" tabindex="0"
+          data-title="SIU Online Result Processing System"
+          data-description="A complete web app to manage and process student results efficiently. This project showcases my skills in backend database management, user authentication, and data visualization. Built with PHP and MySQL, it provides a secure and intuitive platform for students and faculty."
+          data-image="project-result.jpg"
+          data-live-link="#"
+          data-github-link="https://github.com/AkashBarua969/SIU_Online_Result_Processing_System">
+          <h3>SIU Online Result Processing System</h3>
+          <p>A complete web app to manage and process student results efficiently.</p>
+          <button class="btn btn-secondary view-details-btn" aria-label="View details of SIU Online Result Processing System">View Details</button>
+        </article>
+        
+        <article class="project-card web" tabindex="0"
+          data-title="SIU Library Management System"
+          data-description="A system designed to streamline library operations, including book lending, tracking, and user management. This project was built using HTML, CSS, JavaScript, and PHP, demonstrating proficiency in full-stack development and practical application of web technologies."
+          data-image="project-library.jpg"
+          data-live-link="#"
+          data-github-link="https://github.com/AkashBarua969/SIU_Library_Management_System">
+          <h3>SIU Library Management System</h3>
+          <p>System to streamline library operations, including book lending and tracking.</p>
+          <button class="btn btn-secondary view-details-btn" aria-label="View details of SIU Library Management System">View Details</button>
+        </article>
+
+        <article class="project-card web" tabindex="0"
+          data-title="GyaanPath - Online Home Tutor Finder System"
+          data-description="A platform connecting students with home tutors easily. This project includes features for user registration, profile management for both tutors and students, and a search system to find tutors based on subject, location, and rating. Developed with a focus on user experience and a robust backend."
+          data-image="project-tutor.jpg"
+          data-live-link="#"
+          data-github-link="https://github.com/AkashBarua969/GyaanPath_Tutor_Finder_System">
+          <h3>GyaanPath - Online Home Tutor Finder System</h3>
+          <p>A platform connecting students with home tutors easily.</p>
+          <button class="btn btn-secondary view-details-btn" aria-label="View details of GyaanPath - Online Home Tutor Finder System">View Details</button>
+        </article>
+        
+        <article class="project-card ml" tabindex="0"
+          data-title="Heart Failure Prediction System – HeartCare by Akash"
+          data-description="A machine learning system predicting heart failure risk using clinical data. This project demonstrates my interest in data science and my ability to apply machine learning models to solve real-world problems. The model was trained on a dataset of patient health records to provide accurate predictions."
+          data-image="project-heart.jpg"
+          data-live-link="#"
+          data-github-link="https://github.com/AkashBarua969/Heart_Failure_Prediction_System">
+          <h3>Heart Failure Prediction System – HeartCare by Akash</h3>
+          <p>A machine learning system predicting heart failure risk using clinical data.</p>
+          <button class="btn btn-secondary view-details-btn" aria-label="View details of Heart Failure Prediction System">View Details</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container animate" tabindex="-1" aria-label="Contact Me">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations, freelance work, or just to say hello!</p>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder=" " required aria-required="true" aria-describedby="name-error" />
+          <label for="name">Name</label>
+          <span id="name-error" class="error-msg" aria-live="assertive"></span>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder=" " required aria-required="true" aria-describedby="email-error" />
+          <label for="email">Email</label>
+          <span id="email-error" class="error-msg" aria-live="assertive"></span>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder=" " required aria-required="true" aria-describedby="message-error"></textarea>
+          <label for="message">Message</label>
+          <span id="message-error" class="error-msg" aria-live="assertive"></span>
+        </div>
+        <button type="submit" aria-label="Send Message">Send</button>
+        <p class="form-feedback" aria-live="polite"></p>
+      </form>
+
+      <ul class="contact-list" role="list" aria-label="Social and contact links">
+        <li><i class="fas fa-phone"></i> <a href="tel:01881133286">01881133286</a></li>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:akashbaruaab969@gmail.com">akashbaruaab969@gmail.com</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/akash-barua-186560334/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/AkashBarua969" target="_blank" rel="noopener">GitHub</a></li>
+        <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/akashbarua.raj.5/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><i class="fab fa-freelancer"></i> <a href="https://www.freelancer.com.bd/u/akashbaruaab969" target="_blank" rel="noopener">Freelancer</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <footer>
+    <p>&copy; 2025 Akash Barua. All rights reserved.</p>
+  </footer>
+
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="close-btn" aria-label="Close modal">&times;</button>
+      <h3 id="modal-title">Project Title</h3>
+      <img id="modal-image" src="" alt="Project Image" />
+      <p id="modal-description">Project description goes here.</p>
+      <div class="modal-actions">
+        <a id="modal-live-link" href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a id="modal-github-link" href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
